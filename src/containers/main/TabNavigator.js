@@ -6,6 +6,7 @@ import colors from '../../res/colors';
 import palette from '../../res/palette';
 
 import homeNavigator from './home/homeNavigator';
+import searchNavigator from './search/searchNavigator';
 
 export default function TabNavigator({NavigateToStoryCamera}) {
 
@@ -43,6 +44,7 @@ export default function TabNavigator({NavigateToStoryCamera}) {
                 })}
             >
                 <Tab.Screen name="Home" component={homeNavigator} />
+                <Tab.Screen name="Search" component={searchNavigator} />
 
             </Tab.Navigator>
         </React.Fragment>
